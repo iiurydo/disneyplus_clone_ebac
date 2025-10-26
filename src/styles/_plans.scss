@@ -1,0 +1,42 @@
+@use "variaveis";
+.plans{
+    text-align: center;
+    padding: 5.6vw;
+
+    &__list{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        margin-top: 50px;
+        @media (max-width:768px) {
+            display: block;
+
+            .title--small{
+                color: variaveis.$primalColor;
+
+            }
+        }
+        .button{
+            
+            margin-top: 24px;
+        }
+        &__item{
+            padding: 66px 44px 44px;
+            max-width: 380px;
+            width: 100%;
+
+            &:nth-child(2){
+                background-image: url(../../images/fundo_combo_plus.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            img{
+                height: 83px;
+            }
+            strong{
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
